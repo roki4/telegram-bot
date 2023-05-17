@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const config = require('../config');
+const config = require('../../config/index');
 const Film = require('./models/film.model').FilmSchema;
 const User = require('./models/user.models').UserSchema;
 const Cinema = require('./models/cinema.models').CinemaSchema;
