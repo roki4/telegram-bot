@@ -1,0 +1,14 @@
+# Package manager
+node_modules/
+yarn-error.log
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Documentation
+docs/
+
+.vscode/
+.idea/
+debug/
