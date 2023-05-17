@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const config = require('../config');
 const Film = require('./models/film.model').FilmSchema;
+const User = require('./models/user.models').UserSchema;
+const Cinema = require('./models/cinema.models').CinemaSchema;
 
 mongoose.connect(config.DB_URL, {
   useNewUrlParser: true,
@@ -18,5 +20,7 @@ process.on('SIGINT', () => {
 });
 
 mongoose.model('Film', Film); // при помощи метода model, мы создаем модель фильма
+mongoose.model('User', User);
+mongoose.model('Cinema', Cinema);
 
 module.exports = mongoose.connection;
